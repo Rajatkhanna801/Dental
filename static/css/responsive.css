@@ -1,0 +1,21 @@
+@media (max-width: 991px) {
+    .banner-text {text-align: center;}
+    .heading-h1 {font-size: 40px;line-height: 45px;}
+    .heading-p {font-size: 18px;line-height: 30px;}
+    .creative-info {text-align: center;}
+    .btn-main {padding: 0px 27px;}
+    .textimonial-txt {text-align: center;}
+    .common-p {text-align: center;}
+    .textimonial-txt {text-align: center;}
+    .man-img {text-align: center;}
+    button.lnk.btn-main.bg-btn {width: 100%;}
+    .man-img img{
+        width: 65%;
+    }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 425px) {
+    
+}

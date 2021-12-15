@@ -1,0 +1,212 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hybrid Dental</title>
+    <!-- fav icon -->
+    <link rel="icon" href="{% static 'assets/images/favicon.png' %}">
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/custom.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}" />
+</head>
+<body>
+<!-- navbar starts -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'assets/images/logo.png' %}" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'dashboard' %}">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'services' %}">Services</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+<!-- navbar ends -->
+
+<!-- main banner section starts -->
+<section class="main-banner-section services-banner" data-image="{{abc.image.url}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-banner-content">
+                    <h1>{{abc.quote|slice:"14"}} <br>{{abc.quote|slice:"14::"}}</h1>
+                    <h4>{{abc.content}}</h4>
+                    <ul>
+                        <li><a href=""><img src="{% static 'assets/images/phone.png' %}" /> Call Us:+1 234 456 678</a></li>
+                        <li><a href="{% url 'new-user' %}"><img src="{% static 'assets/images/book-appointment.png' %}" /> Book Appointment</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- main banner section ends -->
+
+<section class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="services-content">
+                    <h3>DENTAL PRACTICE</h3>
+                    <h1>Our Services</h1>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui um deleniti atque corrupti quo.</p>
+
+                    <div class="filter-portfolio wow fadeIn animated" data-wow-duration="1s" data-wow-offset="50" data-wow-delay="1s">
+                    <div class="mixitup-wrapper">
+                        <!-- Begin mixitup-nav -->
+                        <div class="mixitup-nav">
+                            <div class="col-lg-12 no-padding">
+                                <ul class=" filter-list">
+                                    {% for point in points %}
+                                    <li class="filter" data-filter="all">{{point.content}}</li>
+                                    {% endfor %}        
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End mixitup-nav -->
+                    </div>
+                    <div class="mt-55 portfolio-filter">
+                        <!-- Begin mixitup-content -->
+                        <div class="mixitup-content" id="mixitupContent">
+                            <div class="row">
+                                {% for service in all_services %}
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                <!-- Begin portfolio-item -->
+                                 <div class="mix general-dentistry">
+                                     <div class="portfolio-grid  no-padding">
+                                    <!-- Begin portfolio-item -->
+                                        <div class="portfolio-item">
+                                           <div class="portfolio-img">
+                                              <a class="html5lightbox" href="{% static 'assets/images/periodontal.png' %}">
+                                              <img src="{{service.image.url}}" alt="Periodontal">
+                                              </a>
+                                              <p>{{service.service_name}}</p>
+                                           </div>
+                                        </div>
+                                        <!-- End portfolio-item -->
+                                     </div>
+                                 </div>
+                                <!-- End portfolio-item -->
+                            </div>
+                            {% endfor %}
+                            </div>
+                    
+                            
+                                <!-- End portfolio-item -->
+                            </div>
+                        </div>
+                        <!-- End mixitup-content -->
+                <!-- End mixitup-wrapper -->
+            </div>
+            
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- appointment section starts -->
+<section class="appointment-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="appointment-content">
+                    <h3>Discussion about all of your options</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit commodo enim sagittis arcu porttitor, non hendrerit metus bibendumid dui vitae nunc consequat iaculis sed sit amet urna.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="appointment-btn">
+                    <a href="{% url 'new-user' %}">BOOK APPOINTMENT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- appointment section ends -->
+
+<!-- appointment section starts -->
+<section class="appointment-section potentail-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="appointment-content">
+                    <h3>Professional Dental Care</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor eu sit amet imperdiet arcu elementum massa vel neque tortor porta dolor fermentum mauris orci, vulputate at lacinia eget nec ante.</p>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="appointment-btn">
+                    <ul>
+                        <li>10 <br /> <span>Years of Experience</span></li>
+                        <li>483 <br /> <span>Total Surgeries performed</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- appointment section ends -->
+
+<!-- footer starts -->
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer-content">
+                    <h3>CONTACT US</h3>
+                    <p>{{contact_details.address}}</p>
+                    <p><a href="mailto:company@email.com">{{contact_details.email}}</a> | <a href="tel:+848/8935-432">{{contact_details.phone_number}}</a> | <a href="javascript:void(0);">Skype: {{contact_details.clinic_name}}</a></p>
+
+                    <ul>
+                        <li><a href="{{contact_details.fb_link}}"><img src="{% static 'assets/images/facebook.svg' %}" /></a></li>
+                        <li><a href="{{contact_details.twitter_link}}"><img src="{% static 'assets/images/twitter.svg' %}" /></a></li>
+                        <li><a href="{{contact_details.instagram_link}}"><img src="{% static 'assets/images/instagram.svg' %}" /></a></li>
+                        <li><a href="{{contact_details.youtube_link}}"><img src="{% static 'assets/images/youtube.svg' %}" /></a></li>
+                    </ul>
+
+                    <p class="copyright-text">All Rights Reserved | Services | Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer ends -->
+
+<!-- js files -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<script src="{% static 'assets/js/jquery.mixitup.min.js' %}"></script>
+<script src="{% static 'assets/js/html5lightbox.js' %}"></script>
+<script src="{% static 'assets/js/custom.js' %}"></script>
+<script>
+    var image = $(".services-banner").data('image');
+    console.log("image============", image)
+    $(".main-banner-section services-banner").css("background-image", "url(" + image + ")");
+</script>
+</body>
+</html>

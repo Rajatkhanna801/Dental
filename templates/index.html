@@ -1,0 +1,292 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hybrid Dental</title>
+    <!-- fav icon -->
+    <link rel="icon" href="{% static 'assets/images/favicon.png' %}">
+
+    <!-- css -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/custom.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}" />
+</head>
+<body>
+<!-- navbar starts -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'dashboard' %}">
+            <img src="{{contact_details.logo.url}}" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'dashboard' %}">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'services' %}">Services</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+<!-- navbar ends -->
+
+<!-- main banner section starts -->
+<section class="main-banner-section" data-image="{{content.image.url}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-banner-content" >
+                    <h4>DENTAL PRACTICE</h4>
+                    <h1>{{content.quote|slice:"0:18"}}<br />{{content.quote|slice:"18:40"}}<br />
+                    {{content.quote|slice:"40:60"}}<br />
+                     {{content.quote|slice:"60::"}}
+                    </h1>
+                    <p>{{content.content|slice:"0:64"}} <br /> {{content.content|slice:"64:130"}}
+                    <br /> {{content.content|slice:"130:200"}}
+                    </p>
+
+                    <a href="{% url 'new-user' %}">BOOK APPOINTMENT</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- main banner section ends -->
+
+<!-- offer section start -->
+<section class="offer-section">
+    <div class="container">
+        {% for description in Description %}
+        <div  class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="offer-img">
+                    <img src= "{{description.image.url}}" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="offer-content">
+                    <h1>What we offer</h1>
+                    <p>{{description.title}}</p>
+                    <ul>
+                        {% for services in description.whatweoffer_set.all %}
+                        <li><img src="{% static 'assets/images/tick.PNG' %}" />
+                             {{services}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+             {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- offer section ends -->
+
+
+<!-- counter section starts -->
+<section class="counter-section" id="counter-stats">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 stats">
+				<i class="fa fa-code" aria-hidden="true"></i>
+				<div class="counting" data-count="{{stats.Performed_surgeries}}">0</div>
+				<h5>Performed Sergeries</h5>
+			</div>
+
+            <div class="col-lg-3 col-md-3 col-6 stats">
+				<i class="fa fa-code" aria-hidden="true"></i>
+				<div class="counting" data-count="{{stats.Satisfied_patients}}">0</div>
+				<h5>Satisfied patients</h5>
+			</div>
+
+            <div class="col-lg-3 col-md-3 col-6 stats">
+				<i class="fa fa-code" aria-hidden="true"></i>
+				<div class="counting" data-count="{{stats.StaffMembers}}">0</div>
+				<h5>Staff Members</h5>
+			</div>
+
+            <div class="col-lg-3 col-md-3 col-6 stats">
+				<i class="fa fa-code" aria-hidden="true"></i>
+				<div class="counting" data-count="{{stats.Yearly_surgeries}}">0</div>
+				<h5>Yearly surgeries</h5>
+			</div>
+        </div>
+    </div>
+</section>
+<!-- counter section ends -->
+<!-- question section starts -->
+<section class="question-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-5">
+                <div class="question-content">
+                    <h2>{{ques_section.quote|slice:"0:35"}}<br /> {{ques_section.quote|slice:"35:55"}}</h2>
+                    <p>{{ques_section.content}}</p>
+                    <div class="row">
+                        {% for icon in ques_icon %}
+                        <div class="col-lg-6 col-md-6">
+                            <div class="question-icon">
+                                <img src="{{icon.image.url}}" />
+                                <h5>{{icon.title}}</h5>
+                                <p>{{icon.content}}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <!-- <div class="col-lg-6 col-md-6">
+                            <div class="question-icon">
+                                <img src="{% static 'assets/images/icon2.png' %}" />
+                                <h5>Lorem Ipsum Specialist</h5>
+                                <p>At vero eos et accusamus et iusto odio dignis.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7">
+                <div class="question-img">
+                    <img src="{{ques_section.image.url}}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- question section ends -->
+
+<!-- results section starts -->
+<section class="result-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="result-content">
+                    <h5>DENTAL PRACTICE</h5>
+                    <h1>{{smile_section.title}}</h1>
+                    <p>{{smile_section.content}}</p>
+                    <img src="{{smile_section.image.url}}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- results section ends -->
+
+<!-- faq section starts -->
+<section class="faq-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="faq-img">
+                    <img src="{{faq_image.faq_image.url}}" />
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="faq-content">
+                    <div class="accordion" id="accordionExample">
+                        {% for faq in FAQ %}
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="for-{{faq.id}}">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#counter-{{faq.id}}" aria-expanded="true" aria-controls="counter-{{faq.id}}">
+                               {{faq.question}}
+                            </button>
+                          </h2>
+                          <div id="counter-{{faq.id}}" {% if forloop.counter == 1 %} class="accordion-collapse collapse show" {% else %} class="accordion-collapse collapse" {% endif %} aria-labelledby="for-{{faq.id}}" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              {{faq.answer}}
+                            </div>
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- faq section ends -->
+
+<!-- smile section starts -->
+<section class="smile-section" data-image="{{fotter_content.image.url}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="smile-content text-center">
+                    <h4>DENTAL PRACTICE</h4>
+                    <h1>{{fotter_content.quote}}</h1>
+                    <p>{{fotter_content.content}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- smile section ends -->
+
+<!-- appointment section starts -->
+<section class="appointment-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul>
+                    {% for icon in fotter_icon %}
+                    <li>
+                        <img src="{{icon.image.url}}" />
+                        <h5>{{icon.title}}</h5>
+                        <p>{{icon.content}}/p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- appointment section ends -->
+
+<!-- footer starts -->
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer-content">
+                    <h3>CONTACT US</h3>
+                    <p>{{contact_details.address}}</p>
+                    <p><a href="mailto:company@email.com">{{contact_details.email}}</a> | <a href="tel:+848/8935-432">{{contact_details.phone_number}}</a> | <a href="javascript:void(0);">Skype: {{contact_details.clinic_name}}</a></p>
+
+                    <ul>
+                        <li><a href="{{contact_details.fb_link}}"><img src="{% static 'assets/images/facebook.svg' %}" /></a></li>
+                        <li><a href="{{contact_details.twitter_link}}"><img src="{% static 'assets/images/twitter.svg' %}" /></a></li>
+                        <li><a href="{{contact_details.instagram_link}}"><img src="{% static 'assets/images/instagram.svg' %}" /></a></li>
+                        <li><a href="{{contact_details.youtube_link}}"><img src="{% static 'assets/images/youtube.svg' %}" /></a></li>
+                    </ul>
+
+                    <p class="copyright-text">All Rights Reserved | Services | Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer ends -->
+
+<!-- js files -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/custom.js' %}"></script>
+<script>
+    var image = $(".main-banner-section").data('image');
+    var imageUrl = $(".smile-section").data('image');
+    $(".main-banner-section").css("background-image", "url(" + image + ")");
+    $(".smile-section").css("background-image", "url(" + imageUrl + ")");
+</script>
+</body>
+</html>
