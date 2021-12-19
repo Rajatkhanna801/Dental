@@ -8,8 +8,8 @@ class Registration(View):
         context = {}
         return render(request, self.template_name, context)
 
-    def post(self, request):
-        return redirect('new-user')
+    # def post(self, request):
+    #     return redirect('new-user')
 
 
 class NewPatientForm(View):
