@@ -1,132 +1,1030 @@
 {% load static %}
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
-
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="{% static 'fonts/material-icon/css/material-design-iconic-font.min.css' %}">
-    <link rel="stylesheet" href="{% static 'vendor/nouislider/nouislider.min.css' %}">
-
-    <!-- Main css -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 
-    <div class="main">
-
-        <div class="container">
-            <div class="signup-content">
-                <div class="signup-img">
-                    <img src="{% static 'images/form-img.jpg' %}" alt="">
-                    <div class="signup-img-content">
-                        <h2>Register now </h2>
-                        <p>while seats are available !</p>
+    <title>patient infomation form</title>
+  </head>
+  <body>
+        <section>
+          <div class="container" style="https://picsum.photos/200/300">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 style="text-align: center;">New Patient Form</h1>
+                <form action="">
+                  
+                  <div class="row mb-4">
+                    
+                    <div class="col-md-4">
+                        <label for="staticDate" class="custom-font col-form-label">Today's Date:</label>
+                        <input class="form-control cus-form-control" name="starting_date" type="date" value="2001-01-01" id="example-date-input">
                     </div>
+                    <div class="col-md-4">
+                      <label for="staticName" class="custom-font col-form-label">Patient Name:</label>
+                      <input class="form-control cus-form-control" type="text" name="name" placeholder="John Doe" aria-label="default input example">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="staticName" class="custom-font col-form-label">Preferred Name:</label>
+                      <input class="form-control cus-form-control" type="text" name="preferred_name" placeholder="Sam smith" aria-label="default input example">
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-md-4">
+                      <h6 class="custom-font mb-2">Please Circle One:</h6>
+                      <div class="d-flex mb-2">
+                        <div class="form-check me-2">
+                          <input class="form-check-input" type="radio" id="inlineCheckbox78" name="martial_status" value="option78">
+                          <label class="form-check-label custom-text" for="inlineCheckbox78">Married</label>
+                        </div>
+                        <div class="form-check me-2">
+                          <input class="form-check-input" type="radio" id="inlineCheckbox79" name="martial_status" value="option79">
+                          <label class="form-check-label custom-text" for="inlineCheckbox79">Single</label>
+                        </div>
+                        <div class="form-check me-2">
+                          <input class="form-check-input" type="radio" id="inlineCheckbox80" name="martial_status" value="option80">
+                          <label class="form-check-label custom-text" for="inlineCheckbox80">Child</label>
+                        </div>
+                        <div class="form-check me-2">
+                          <input class="form-check-input" type="radio" id="inlineCheckbox81" name="martial_status" value="option81">
+                          <label class="form-check-label custom-text" for="inlineCheckbox81">Other</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <h6 class="custom-font mb-2">Gender:</h6>
+                      <div class="d-flex mb-2">   
+                        <div class="form-check me-2">
+                          <input class="form-check-input" type="radio" id="inlineCheckbox82" name="gender" value="option82">
+                          <label class="form-check-label custom-text" for="inlineCheckbox82">Male</label>
+                        </div>
+                        <div class="form-check me-2">
+                          <input class="form-check-input" type="radio" id="inlineCheckbox83" name="gender" value="option83">
+                          <label class="form-check-label custom-text" for="inlineCheckbox83">Female</label>
+                        </div>
+                        <div class="form-check me-2">
+                          <input class="form-check-input" type="radio" id="inlineCheckbox184" name="gender" value="option184">
+                          <label class="form-check-label custom-text" for="inlineCheckbox184">Other</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-md-8">
+                      <label for="staticAddress" class="custom-font col-form-label">Patient Address:</label>
+                      <input type="street"class="form-control cus-form-control" name="address" id="autocomplete"placeholder="#4356,sec-D chandigarh">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="staticCity" class="custom-font col-form-label">City:</label>
+                      <input type="city" class="form-control cus-form-control" name="city" id="inputCity" placeholder="City">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="staticZip" class="custom-font col-form-label">Zip:</label>
+                      <input type="zip" class="form-control cus-form-control" name="zip_code" id="inputZip" placeholder="Zip">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="staticState" class="custom-font col-form-label">State:</label>
+                      <input type="state" class="form-control cus-form-control" name="state" id="inputState" placeholder="State">
+                    </div>
+                    
+                    <div class="col-md-4">
+                      <label for="staticCounty" class="custom-font col-form-label">County:</label>
+                      <input type="county" class="form-control cus-form-control" name="country"  id="inputCounty" placeholder="County">
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-md-4">
+                      <form action="/action_page.php">
+                        <label for="phone"class="custom-font col-form-label cus-form-control">Home phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-45-678" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                      </form>
+                    </div>
+                    <div class="col-md-4">
+                      <form action="/action_page.php">
+                        <label for="phone"class="custom-font col-form-label">Work phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-45-678" name="phone_number_1" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                      </form>
+                    </div>
+                    <div class="col-md-4">
+                      <form action="/action_page.php">
+                        <label for="phone"class="custom-font col-form-label">Cell phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-45-678" name="phone_number_2" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-md-4">
+                      <h6 class="custom-font mb-2">Would you like to receive appointment reminders via text message?</h6>
+                      <div class="d-flex">
+                        <div class="form-check me-2">
+                          <input class="form-check-input cus-form-control" name="mobile-message" type="radio" id="inlineCheckbox84" value="true">
+                          <label class="form-check-label" for="inlineCheckbox84">Yes</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input cus-form-control" name="mobile-message" type="radio" id="inlineCheckbox85" value="false">
+                          <label class="form-check-label" for="inlineCheckbox85">No</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <h6 class="custom-font mb-2">Would you like to receive appointment reminders via email?</h6>
+                      <div class="d-flex">
+                        <div class="form-check me-2">
+                          <input class="form-check-input cus-form-control" name="email_message" type="radio" id="inlineCheckbox86" value="true">
+                          <label class="form-check-label" for="inlineCheckbox86">Yes</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input cus-form-control" name="email_message" type="radio" id="inlineCheckbox87" value="false">
+                          <label class="form-check-label" for="inlineCheckbox87">No</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                      <div class="col-md-4">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="custom-font cus-form-control form-label">Email address</label>
+                          <input type="email" name="email" class="form-control cus-form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="staticEmployer" class="custom-font col-form-label">Patient Employer:</label>
+                        <input class="form-control cus-form-control" type="text" name="patient_emplorer" placeholder="Employer Name" aria-label="default input example">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="exampleFormControlInput1" class="custom-font form-label cus-form-control">Occupation:</label>
+                        <div class="input-group mb-3">
+                           <select class="form-select cus-form-control" id="inputGroupSelect01">
+                             <option selected="">Choose...</option>
+                             <option value="1">One</option>
+                             <option value="2">Two</option>
+                             <option value="3">Three</option>
+                           </select>
+                         </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="staticName" class="custom-font col-form-label ">Whom can we thank for refferring you to our office?</label>
+                        <input class="form-control cus-form-control" type="text" placeholder="Referred Name" aria-label="default input example">
+                      </div>
+                  </div>
+                  <div class="row mb-4">
+                    <h6 class="custom-font">In case of an emergency, whom shall we call?</h6>
+                    <div class="col-md-4">
+                      <label for="staticName" class="custom-font col-form-label">Name:</label>
+                      <input class="form-control cus-form-control" type="text" placeholder="Patient Name" aria-label="default input example">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="staticName" class="custom-font col-form-label">Relationship:</label>
+                      <input class="form-control cus-form-control" type="text" placeholder="Patient Name" aria-label="default input example">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phone"class="custom-font col-form-label"># Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="staticName" class="custom-font col-form-label">(If the patient is a minor) Name of Parent or Responsible Party:</label>
+                      <input class="form-control cus-form-control" type="text" placeholder="Guardian's Name" aria-label="default input example">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="staticDate" class="custom-font col-form-label">Parent Date of Birth:</label>
+                      <input class="form-control cus-form-control" name="starting_date" type="date" value="2001-01-01" id="example-date-input">
+                  </div>
+                    <div class="col-md-8">
+                      <label for="staticAddress" class="custom-font col-form-label">Patient Address:</label>
+                      <input type="street"class="form-control cus-form-control"id="autocomplete"placeholder="">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="staticcity" class="custom-font col-form-label">City:</label>
+                      <input type="city" class="form-control cus-form-control" id="inputCity" placeholder="City">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="staticState" class="custom-font col-form-label">State:</label>
+                      <input type="state" class="form-control cus-form-control" id="inputState" placeholder="State">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="staticcode" class="custom-font col-form-label">Zip code:</label>
+                      <input type="zip" class="form-control cus-form-control" id="inputZip" placeholder="Zip">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <h6 class="custom-font mb-4 text-center mt-3">Health History</h6>
+                    <h6 class="custom-text mb-3">Do you have or have you ever had any of the following? Please check all (YES or NO) that apply:</h6>
+                    <div class="col-md-4 pe-5">
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text ">AIDS/HIV</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="aids" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label custom-text" for="inlineCheckbox1">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="aids" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label custom-text" for="inlineCheckbox2">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text ">Artificial Joints</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="artifical" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label custom-text" for="inlineCheckbox3">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="artifical" id="inlineCheckbox4" value="option4">
+                            <label class="form-check-label custom-text" for="inlineCheckbox4">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text ">Bloody Sputum</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="bloody" id="inlineCheckbox5" value="option5">
+                            <label class="form-check-label custom-text" for="inlineCheckbox5">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="bloody" id="inlineCheckbox6" value="option6">
+                            <label class="form-check-label custom-text" for="inlineCheckbox6">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text ">Bisphosphonate Medication</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="medications" id="inlineCheckbox7" value="option7">
+                            <label class="form-check-label custom-text" for="inlineCheckbox7">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="medications" id="inlineCheckbox8" value="option8">
+                            <label class="form-check-label custom-text" for="inlineCheckbox8">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text ">Chronic Cough, >3 weeks</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="cough" id="inlineCheckbox9" value="option9">
+                            <label class="form-check-label custom-text" for="inlineCheckbox9">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="cough" id="inlineCheckbox10" value="option10">
+                            <label class="form-check-label custom-text" for="inlineCheckbox10">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text ">Epilepsy</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="epilepsy" id="inlineCheckbox11" value="option11">
+                            <label class="form-check-label custom-text" for="inlineCheckbox11">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="epilepsy" id="inlineCheckbox12" value="option12">
+                            <label class="form-check-label custom-text" for="inlineCheckbox12">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Fainting</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="faintin" id="inlineCheckbox13" value="option13">
+                            <label class="form-check-label custom-text" for="inlineCheckbox13">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="faintin" id="inlineCheckbox14" value="option14">
+                            <label class="form-check-label custom-text" for="inlineCheckbox14">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text ">Growths</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="growths" id="inlineCheckbox15" value="option15">
+                            <label class="form-check-label custom-text" for="inlineCheckbox15">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="growths" id="inlineCheckbox16" value="option16">
+                            <label class="form-check-label custom-text" for="inlineCheckbox16">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex ">
+                        <h6 class="d-flex align-items-center custom-text ">High Blood Pressure</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="high_pressure" id="inlineCheckbox17" value="option17">
+                            <label class="form-check-label custom-text" for="inlineCheckbox17">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="high_pressure" id="inlineCheckbox18" value="option18">
+                            <label class="form-check-label custom-text" for="inlineCheckbox18">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text ">Heart Murmur</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="heart" id="inlineCheckbox19" value="option19">
+                            <label class="form-check-label custom-text" for="inlineCheckbox19">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="heart" id="inlineCheckbox20" value="option20">
+                            <label class="form-check-label custom-text" for="inlineCheckbox20">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                          <h6 class="d-flex align-items-center custom-text ">Hyper Thyroid</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="thyrid" id="inlineCheckbox21" value="option21">
+                            <label class="form-check-label custom-text" for="inlineCheckbox21">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="thyrid" id="inlineCheckbox22" value="option22">
+                            <label class="form-check-label custom-text" for="inlineCheckbox22">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                          <h6 class="d-flex align-items-center custom-text ">Jaundice</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="jaundice" id="inlineCheckbox23" value="option23">
+                            <label class="form-check-label custom-text" for="inlineCheckbox23">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="jaundice" id="inlineCheckbox24" value="option24">
+                            <label class="form-check-label custom-text" for="inlineCheckbox24">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text ">Loss Appetite</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="loss_appetite" id="inlineCheckbox25" value="option25">
+                            <label class="form-check-label custom-text" for="inlineCheckbox25">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="loss_appetite" id="inlineCheckbox26" value="option26">
+                            <label class="form-check-label custom-text" for="inlineCheckbox26">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text ">Mitral Valve Prolapse</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="mitral" id="inlineCheckbox27" value="option27">
+                            <label class="form-check-label custom-text" for="inlineCheckbox27">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="mitral" id="inlineCheckbox28" value="option28">
+                            <label class="form-check-label custom-text" for="inlineCheckbox28">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Nervous Disorders</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="nervous" id="inlineCheckbox29" value="option29">
+                            <label class="form-check-label custom-text" for="inlineCheckbox29">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="nervous" id="inlineCheckbox30" value="option30">
+                            <label class="form-check-label custom-text" for="inlineCheckbox30">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text ">Prosthetic Heart Valve</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="heart_valve" id="inlineCheckbox31" value="option31">
+                            <label class="form-check-label custom-text" for="inlineCheckbox31">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="heart_valve" id="inlineCheckbox32" value="option32">
+                            <label class="form-check-label custom-text" for="inlineCheckbox32">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Respiratory Problems</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="respiratory" id="inlineCheckbox33" value="option33">
+                            <label class="form-check-label custom-text" for="inlineCheckbox33">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="respiratory" id="inlineCheckbox34" value="option34">
+                            <label class="form-check-label custom-text" for="inlineCheckbox34">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Stomach Problems Ulcers</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="stomach" id="inlineCheckbox35" value="option35">
+                            <label class="form-check-label custom-text" for="inlineCheckbox33">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="stomach" id="inlineCheckbox36" value="option36">
+                            <label class="form-check-label custom-text" for="inlineCheckbox34">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Sexually Transmitted Diseases</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="Sexually" id="inlineCheckbox37" value="option37">
+                            <label class="form-check-label custom-text" for="inlineCheckbox37">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="Sexually" id="inlineCheckbox38" value="option38">
+                            <label class="form-check-label custom-text" for="inlineCheckbox38">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Unexplained Weight loss</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="loss_weigth" id="inlineCheckbox39" value="option39">
+                            <label class="form-check-label custom-text" for="inlineCheckbox39">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="loss_weigth" id="inlineCheckbox40" value="option40">
+                            <label class="form-check-label custom-text" for="inlineCheckbox40">No</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-5">
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Anemia</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="anemia" id="inlineCheckbox41" value="option41">
+                            <label class="form-check-label custom-text" for="inlineCheckbox41">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="anemia" id="inlineCheckbox42" value="option42">
+                            <label class="form-check-label custom-text" for="inlineCheckbox42">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Asthma</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="asthma" id="inlineCheckbox43" value="option43">
+                            <label class="form-check-label custom-text" for="inlineCheckbox43">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="asthma" id="inlineCheckbox44" value="option44">
+                            <label class="form-check-label custom-text" for="inlineCheckbox44">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex ">
+                        <h6 class="d-flex align-items-center custom-text">Brast implants</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="implants" id="inlineCheckbox45" value="option45">
+                            <label class="form-check-label custom-text" for="inlineCheckbox45">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="implants" id="inlineCheckbox46" value="option46">
+                            <label class="form-check-label custom-text" for="inlineCheckbox46">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Cancer</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="cancer" id="inlineCheckbox47" value="option47">
+                            <label class="form-check-label custom-text" for="inlineCheckbox47">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="cancer" id="inlineCheckbox48" value="option48">
+                            <label class="form-check-label custom-text" for="inlineCheckbox48">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Growths</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="growths" id="inlineCheckbox49" value="option49">
+                            <label class="form-check-label custom-text" for="inlineCheckbox49">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="growths" id="inlineCheckbox50" value="option50">
+                            <label class="form-check-label custom-text" for="inlineCheckbox50">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Diabetes</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="diabetes" id="inlineCheckbox51" value="option51">
+                            <label class="form-check-label custom-text" for="inlineCheckbox51">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="diabetes" id="inlineCheckbox52" value="option52">
+                            <label class="form-check-label custom-text" for="inlineCheckbox52">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Emphysema</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="emphysema" id="inlineCheckbox53" value="option53">
+                            <label class="form-check-label custom-text" for="inlineCheckbox53">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="emphysema" id="inlineCheckbox54" value="option54">
+                            <label class="form-check-label custom-text" for="inlineCheckbox54">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Fatigue</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="fatigue" id="inlineCheckbox55" value="option55">
+                            <label class="form-check-label custom-text" for="inlineCheckbox55">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="fatigue" id="inlineCheckbox56" value="option56">
+                            <label class="form-check-label custom-text" for="inlineCheckbox56">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Hay Fever</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="fever" id="inlineCheckbox57" value="option57">
+                            <label class="form-check-label custom-text" for="inlineCheckbox11">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="fever" id="inlineCheckbox58" value="option58">
+                            <label class="form-check-label custom-text" for="inlineCheckbox58">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Hemoptysis</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="hemoptysis" id="inlineCheckbox59" value="option59">
+                            <label class="form-check-label custom-text" for="inlineCheckbox60">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="hemoptysis" id="inlineCheckbox61" value="option61">
+                            <label class="form-check-label custom-text" for="inlineCheckbox61">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Hepatitis</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="hepatitis" id="inlineCheckbox62" value="option62">
+                            <label class="form-check-label custom-text" for="inlineCheckbox62">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="hepatitis" id="inlineCheckbox63" value="option63">
+                            <label class="form-check-label custom-text" for="inlineCheckbox63">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex ">
+                        <h6 class="d-flex align-items-center custom-text">Hypo Thyroid</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="hypo_thyrid" id="inlineCheckbox64" value="option64">
+                            <label class="form-check-label custom-text" for="inlineCheckbox64">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="hypo_thyrid" id="inlineCheckbox65" value="option65">
+                            <label class="form-check-label custom-text" for="inlineCheckbox65">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Kidney Disease</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="kidney" id="inlineCheckbox66" value="option66">
+                            <label class="form-check-label custom-text" for="inlineCheckbox66">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="kidney" id="inlineCheckbox67" value="option67">
+                            <label class="form-check-label custom-text" for="inlineCheckbox67">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                          <h6 class="d-flex align-items-center custom-text">Mental Disorders</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="mental_disorder" id="inlineCheckbox68" value="option68">
+                            <label class="form-check-label custom-text" for="inlineCheckbox68">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="mental_disorder" id="inlineCheckbox69" value="option69">
+                            <label class="form-check-label custom-text" for="inlineCheckbox69">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                          <h6 class="d-flex align-items-center custom-text">Night Sweats</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="night" id="inlineCheckbox70" value="option70">
+                            <label class="form-check-label custom-text" for="inlineCheckbox70">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="night" id="inlineCheckbox71" value="option71">
+                            <label class="form-check-label custom-text" for="inlineCheckbox71">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Pacemaker</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="pacemaker" id="inlineCheckbox72" value="option72">
+                            <label class="form-check-label custom-text" for="inlineCheckbox72">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="pacemaker" id="inlineCheckbox73" value="option73">
+                            <label class="form-check-label custom-text" for="inlineCheckbox73">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Rheumatic Fever</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="fever" id="inlineCheckbox74" value="option74">
+                            <label class="form-check-label custom-text" for="inlineCheckbox74">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="fever" id="inlineCheckbox75" value="option75">
+                            <label class="form-check-label custom-text" for="inlineCheckbox75">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Fadiation Treatment</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="fadiation" id="inlineCheckbox76" value="option76">
+                            <label class="form-check-label custom-text" for="inlineCheckbox76">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="fadiation" id="inlineCheckbox77" value="option77">
+                            <label class="form-check-label custom-text" for="inlineCheckbox77">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Sinus Probmes</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="probmes" id="inlineCheckbox78b" value="option78b">
+                            <label class="form-check-label custom-text" for="inlineCheckbox78b">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="probmes" id="inlineCheckbox79b" value="option79b">
+                            <label class="form-check-label custom-text" for="inlineCheckbox79b">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Tuberculosis</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="Tuberculosis" id="inlineCheckbox80b" value="option80b">
+                            <label class="form-check-label custom-text" for="inlineCheckbox80b">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="Tuberculosis" id="inlineCheckbox81b" value="option81b">
+                            <label class="form-check-label custom-text" for="inlineCheckbox81b">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Other:</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="other" id="inlineCheckbox82b" value="option82b">
+                            <label class="form-check-label custom-text" for="inlineCheckbox82b">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="other" id="inlineCheckbox83b" value="option83b">
+                            <label class="form-check-label custom-text" for="inlineCheckbox83b">No</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 ps-5">
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Arthritis</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="arthritis" id="inlineCheckbox41a" value="option41a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox41a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="arthritis" id="inlineCheckbox42a" value="option42a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox42a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Blood Disease</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="blood" id="inlineCheckbox43a" value="option43a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox43a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="blood" id="inlineCheckbox44a" value="option44a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox44a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex ">
+                        <h6 class="d-flex align-items-center custom-text">Blood Thinners</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="blood_thinner" id="inlineCheckbox45a" value="option45a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox45a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="blood_thinner" id="inlineCheckbox46a" value="option46a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox46a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-tex">Chest Pain</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="chest_pain" id="inlineCheckbox47a" value="option47a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox47a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="chest_pain" id="inlineCheckbox48a" value="option48a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox48a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Dizziness</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="dizziness" id="inlineCheckbox49a" value="option49a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox49a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="dizziness" id="inlineCheckbox50a" value="option50a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox50a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Excessive Bleeding</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="excess" id="inlineCheckbox51a" value="option51a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox51a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="excess" id="inlineCheckbox52a" value="option52a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox52a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Glaucoma</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="glaucoma" id="inlineCheckbox53a" value="option53a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox53a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="glaucoma" id="inlineCheckbox54a" value="option54a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox54a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Head Injury</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="head" id="inlineCheckbox55a" value="option55a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox55a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="head" id="inlineCheckbox56a" value="option56a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox56a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Heart Disease</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="heart" id="inlineCheckbox57a" value="option57a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox57a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="heart" id="inlineCheckbox58a" value="option58a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox58a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Horaseness</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="horaseness" id="inlineCheckbox59a" value="option59">
+                            <label class="form-check-label custom-text" for="inlineCheckbox59a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="horaseness" id="inlineCheckbox61a" value="option61a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox61a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">High Cholesterol</h6>
+                        <div class="d-flex  ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="cholesterol" id="inlineCheckbox62a" value="option62a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox62a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="cholesterol" id="inlineCheckbox63a" value="option63a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox63a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex ">
+                        <h6 class="d-flex align-items-center custom-text">Liver Disease</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="liver" id="inlineCheckbox64a" value="option64a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox64a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="liver" id="inlineCheckbox65a" value="option65a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox65a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text"></h6>
+                        <div class="d-flex  ms-auto">
+                         
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                          <h6 class="d-flex align-items-center custom-text"></h6>
+                        <div class="d-flex ms-auto">
+                          
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                          <h6 class="d-flex align-items-center custom-text"></h6>
+                        <div class="d-flex ms-auto">
+                          
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Recent Surgery</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="surgery" id="inlineCheckbox72a" value="option72a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox72a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="surgery" id="inlineCheckbox73a" value="option73a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox73a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Stroke</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="stroke" id="inlineCheckbox74a" value="option74a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox74a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="stroke" id="inlineCheckbox75a" value="option75a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox75a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Transplant</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="transplant" id="inlineCheckbox76a" value="option76a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox76a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="transplant" id="inlineCheckbox77a" value="option77a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox77a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text">Tumors</h6>
+                        <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="tumor" id="inlineCheckbox78a" value="option78a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox78a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="tumor" id="inlineCheckbox79a" value="option79a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox79a">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text"></h6>
+                        <div class="d-flex ms-auto">
+                          
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <h6 class="d-flex align-items-center custom-text"></h6>
+                        <!-- <div class="d-flex ms-auto">
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox82a" value="option82a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox82a">Yes</label>
+                          </div>
+                          <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="" id="inlineCheckbox83a" value="option83a">
+                            <label class="form-check-label custom-text" for="inlineCheckbox83a">No</label>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-12">
+                <div class="button-section d-flex">
+                  <div class="Preview-btn my-5 d-flex justify-content-center">
+                    <a href="{% url 'dashboard' %}">
+                    
+                    <button type="button" class="btn btn-blue"><i class="fas fa-angle-double-left me-2"></i> Previous</button>
+                    </a>
+                  </div>
+                  <div class="Next-btn my-5 ms-auto d-flex justify-content-center">
+                    <a href="{% url 'new-form' %}">
+                      <button type="button" class="btn btn-blue">Next <i class="fas fa-angle-double-right ms-2"></i></button>
+                    </a>
+                  </div>
                 </div>
-                <div class="signup-form">
-                    <form method="POST" class="register-form" id="register-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <div class="form-input">
-                                    <label for="first_name" class="required">First name</label>
-                                    <input type="text" name="first_name" id="first_name" />
-                                </div>
-                                <div class="form-input">
-                                    <label for="last_name" class="required">Last name</label>
-                                    <input type="text" name="last_name" id="last_name" />
-                                </div>
-                                <div class="form-input">
-                                    <label for="company" class="required">Company</label>
-                                    <input type="text" name="company" id="company" />
-                                </div>
-                                <div class="form-input">
-                                    <label for="email" class="required">Email</label>
-                                    <input type="text" name="email" id="email" />
-                                </div>
-                                <div class="form-input">
-                                    <label for="phone_number" class="required">Phone number</label>
-                                    <input type="text" name="phone_number" id="phone_number" />
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="form-select">
-                                    <div class="label-flex">
-                                        <label for="meal_preference">meal preference</label>
-                                        <a href="#" class="form-link">Lunch detail</a>
-                                    </div>
-                                    <div class="select-list">
-                                        <select name="meal_preference" id="meal_preference">
-                                            <option value="Vegetarian">Vegetarian</option>
-                                            <option value="Kosher">Kosher</option>
-                                            <option value="Asian Vegetarian">Asian Vegetarian</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-radio">
-                                    <div class="label-flex">
-                                        <label for="payment">Payment Mode</label>
-                                        <a href="#" class="form-link">Payment Detail</a>
-                                    </div>
-                                    <div class="form-radio-group">            
-                                        <div class="form-radio-item">
-                                            <input type="radio" name="payment" id="cash" checked>
-                                            <label for="cash">Cash</label>
-                                            <span class="check"></span>
-                                        </div>
-                                        <div class="form-radio-item">
-                                            <input type="radio" name="payment" id="cheque">
-                                            <label for="cheque">Cheque</label>
-                                            <span class="check"></span>
-                                        </div>
-                                        <div class="form-radio-item">
-                                            <input type="radio" name="payment" id="demand">
-                                            <label for="demand">Demand Draf</label>
-                                            <span class="check"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-input">
-                                    <label for="chequeno">DD / Cheque No.</label>
-                                    <input type="text" name="chequeno" id="chequeno" />
-                                </div>
-                                <div class="form-input">
-                                    <label for="blank_name">Drawn on ( Bank Name)</label>
-                                    <input type="text" name="blank_name" id="blank_name" />
-                                </div>
-                                <div class="form-input">
-                                    <label for="payable">Payable at</label>
-                                    <input type="text" name="payable" id="payable" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="donate-us">
-                            <label>Donate us</label>
-                            <div class="price_slider ui-slider ui-slider-horizontal">
-                                <div id="slider-margin"></div>
-                                <span class="donate-value" id="value-lower"></span>
-                            </div>
-                        </div>
-                        <div class="form-submit">
-                            <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
-                            <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
-                        </div>
-                    </form>
-                </div>
+              </div>
             </div>
-        </div>
-
-    </div>
-
-    <!-- JS -->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/nouislider/nouislider.min.js' %}"></script>
-    <script src="{% static 'vendor/wnumb/wNumb.js' %}"></script>
-    <script src="{% static 'vendor/jquery-validation/dist/jquery.validate.min.js' %}"></script>
-    <script src="{% static 'vendor/jquery-validation/dist/additional-methods.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-</body>
+          </div>
+        </section> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+  </body>
 </html>
