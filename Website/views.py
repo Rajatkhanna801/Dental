@@ -33,10 +33,12 @@ class ContactView(View):
         last_name = request.POST.get('last_name')
         email = request.POST.get('email')
         phone_number = request.POST.get('phone_number')
-        message = request.POST.get('message')
-        print("====", first_name, last_name, email, phone_number, message)
-        subject = [first_name, last_name, email, phone_number, message]
-        send_mail(subject,message, EMAIL_HOST_USER, ['rajatkhanna802@gmail.com'], fail_silently = False)
+        text_message = request.POST.get('message')
+        subject = "Customer Query"
+        print("====", first_name, last_name, email, phone_number, text_message)
+        new_line = "/n"
+        message = f"Name: {first_name} {last_name}, Email: {email}, Phone_number: {phone_number}, Message: {text_message}"
+        send_mail(subject,message, EMAIL_HOST_USER, ['sakshikhanna133@gmail.com'], fail_silently = False)
         return redirect('contact')
 
 
