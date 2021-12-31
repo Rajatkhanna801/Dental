@@ -127,14 +127,12 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_URL = '/prefix/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'assests')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'public','assests')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
@@ -148,5 +146,7 @@ EMAIL_HOST_USER = 'rajatkhanna801@gmail.com'
 EMAIL_HOST_PASSWORD = 'Nareshkhanna1@'
 
 #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
+#sudo apt-get remove nginx* --purge
+#sudo fuser -k 8000/tcp
 
 
