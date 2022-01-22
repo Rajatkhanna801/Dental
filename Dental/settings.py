@@ -1,3 +1,5 @@
+
+
 """
 Django settings for Dental project.
 
@@ -24,9 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-u&ine@+#ylg#ws!5n5vpl+l(c4$c*m(z2rf&ef&%gj)0(=qvb1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["*", "ec2-13-59-100-150.us-east-2.compute.amazonaws.com:8000"]
+ALLOWED_HOSTS = ["*", "ec2-13-59-100-150.us-east-2.compute.amazonaws.com:8000", "http://hybrid-dental.com/", 
+"http://www.hybrid-dental.co./"]
 #ec2-13-59-100-150.us-east-
 
 
@@ -128,11 +131,11 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'assests')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+	os.path.join(BASE_DIR,'static')
 ]
-
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
@@ -148,5 +151,4 @@ EMAIL_HOST_PASSWORD = 'Nareshkhanna1@'
 #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
 #sudo apt-get remove nginx* --purge
 #sudo fuser -k 8000/tcp
-
 

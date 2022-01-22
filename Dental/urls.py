@@ -1,3 +1,4 @@
+
 """Dental URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -25,4 +26,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
