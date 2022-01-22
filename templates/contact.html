@@ -28,16 +28,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'dashboard' %}">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="{% url 'services' %}">Services</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
-            </li>
-        </ul>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'dashboard' %}"><h6><strong style="font-style: italic;">Home</strong></h6></a>
+                </li>
+                &nbsp;
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'services' %}"><h6><strong style="font-style: italic;">Services</strong></h6></a>
+                </li>
+                &nbsp;
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}"><h6><strong style="font-style: italic;" >Contact</strong></h6></a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
@@ -127,14 +129,14 @@
             <div class="col-lg-12">
                 <div class="footer-content">
                     <h3>CONTACT US</h3>
-                    <p>63 Wall St, New York, NY 10005</p>
-                    <p><a href="mailto:company@email.com">company@email.com</a> | <a href="tel:+848/8935-432">+848/8935-432</a> | <a href="javascript:void(0);">Skype: dentals company</a></p>
+                    <p>{{contact_details.address}}</p>
+                    <p><a href="mailto:company@email.com">{{contact_details.email}}</a> | <a href="tel:+848/8935-432">{{contact_details.phone_number}}</a> | <a href="javascript:void(0);">Skype: {{contact_details.clinic_name}}</a></p>
 
                     <ul>
-                        <li><a href=""><img src="{% static 'assets/images/facebook.svg' %}" /></a></li>
-                        <li><a href=""><img src="{% static 'assets/images/twitter.svg' %}" /></a></li>
-                        <li><a href=""><img src="{% static 'assets/images/instagram.svg' %}" /></a></li>
-                        <li><a href=""><img src="{% static 'assets/images/youtube.svg' %}" /></a></li>
+                        <li><a href="{{contact_details.fb_link}}"><img src="{% static 'assets/images/facebook.svg' %}" /></a></li>
+                        <li><a href="{{contact_details.twitter_link}}"><img src="{% static 'assets/images/twitter.svg' %}" /></a></li>
+                        <li><a href="{{contact_details.instagram_link}}"><img src="{% static 'assets/images/instagram.svg' %}" /></a></li>
+                        <li><a href="{{contact_details.youtube_link}}"><img src="{% static 'assets/images/youtube.svg' %}" /></a></li>
                     </ul>
 
                     <p class="copyright-text">All Rights Reserved | Services | Privacy Policy</p>

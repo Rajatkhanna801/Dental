@@ -1,0 +1,570 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 82 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 81 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/Contents 83 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 81 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/Contents 84 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 81 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 85 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 81 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Contents 86 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 81 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Outlines 11 0 R /PageMode /UseNone /Pages 81 0 R /Type /Catalog
+>>
+endobj
+10 0 obj
+<<
+/Author () /CreationDate (D:20220119180422+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220119180422+00'00') /Producer (xhtml2pdf <https://github.com/xhtml2pdf/xhtml2pdf/>) 
+  /Subject () /Title (patient infomation form) /Trapped /False
+>>
+endobj
+11 0 obj
+<<
+/Count 6 /First 12 0 R /Last 12 0 R /Type /Outlines
+>>
+endobj
+12 0 obj
+<<
+/Count -1 /Dest [ 4 0 R /Fit ] /First 13 0 R /Last 13 0 R /Parent 11 0 R /Title (New Patient Form)
+>>
+endobj
+13 0 obj
+<<
+/Count -1 /Dest [ 4 0 R /Fit ] /First 14 0 R /Last 14 0 R /Parent 12 0 R /Title (Please Circle One:)
+>>
+endobj
+14 0 obj
+<<
+/Count -1 /Dest [ 4 0 R /Fit ] /First 15 0 R /Last 15 0 R /Parent 13 0 R /Title (Please Circle One:)
+>>
+endobj
+15 0 obj
+<<
+/Count -1 /Dest [ 4 0 R /Fit ] /First 16 0 R /Last 16 0 R /Parent 14 0 R /Title (Please Circle One:)
+>>
+endobj
+16 0 obj
+<<
+/Count -64 /Dest [ 4 0 R /Fit ] /First 17 0 R /Last 80 0 R /Parent 15 0 R /Title (Please Circle One:)
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 4 0 R /Fit ] /Next 18 0 R /Parent 16 0 R /Title (Please Circle One:)
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 4 0 R /Fit ] /Next 19 0 R /Parent 16 0 R /Prev 17 0 R /Title (Gender:)
+>>
+endobj
+19 0 obj
+<<
+/Dest [ 4 0 R /Fit ] /Next 20 0 R /Parent 16 0 R /Prev 18 0 R /Title (Would you like to receive appointment reminders via text message?)
+>>
+endobj
+20 0 obj
+<<
+/Dest [ 4 0 R /Fit ] /Next 21 0 R /Parent 16 0 R /Prev 19 0 R /Title (Would you like to receive appointment reminders via email?)
+>>
+endobj
+21 0 obj
+<<
+/Dest [ 4 0 R /Fit ] /Next 22 0 R /Parent 16 0 R /Prev 20 0 R /Title (In case of an emergency, whom shall we call?)
+>>
+endobj
+22 0 obj
+<<
+/Dest [ 4 0 R /Fit ] /Next 23 0 R /Parent 16 0 R /Prev 21 0 R /Title (Health History)
+>>
+endobj
+23 0 obj
+<<
+/Dest [ 4 0 R /Fit ] /Next 24 0 R /Parent 16 0 R /Prev 22 0 R /Title (Do you have or have you ever had any of the following? Please check all \(YES or NO\) that apply:)
+>>
+endobj
+24 0 obj
+<<
+/Dest [ 4 0 R /Fit ] /Next 25 0 R /Parent 16 0 R /Prev 23 0 R /Title (AIDS/HIV)
+>>
+endobj
+25 0 obj
+<<
+/Dest [ 4 0 R /Fit ] /Next 26 0 R /Parent 16 0 R /Prev 24 0 R /Title (Artificial Joints)
+>>
+endobj
+26 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 27 0 R /Parent 16 0 R /Prev 25 0 R /Title (Bloody Sputum)
+>>
+endobj
+27 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 28 0 R /Parent 16 0 R /Prev 26 0 R /Title (Bisphosphonate Medication)
+>>
+endobj
+28 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 29 0 R /Parent 16 0 R /Prev 27 0 R /Title (Chronic Cough, >3 weeks)
+>>
+endobj
+29 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 30 0 R /Parent 16 0 R /Prev 28 0 R /Title (Epilepsy)
+>>
+endobj
+30 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 31 0 R /Parent 16 0 R /Prev 29 0 R /Title (Fainting)
+>>
+endobj
+31 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 32 0 R /Parent 16 0 R /Prev 30 0 R /Title (Growths)
+>>
+endobj
+32 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 33 0 R /Parent 16 0 R /Prev 31 0 R /Title (High Blood Pressure)
+>>
+endobj
+33 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 34 0 R /Parent 16 0 R /Prev 32 0 R /Title (Heart Murmur)
+>>
+endobj
+34 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 35 0 R /Parent 16 0 R /Prev 33 0 R /Title (Hyper Thyroid)
+>>
+endobj
+35 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 36 0 R /Parent 16 0 R /Prev 34 0 R /Title (Jaundice)
+>>
+endobj
+36 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 37 0 R /Parent 16 0 R /Prev 35 0 R /Title (Loss Appetite)
+>>
+endobj
+37 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 38 0 R /Parent 16 0 R /Prev 36 0 R /Title (Mitral Valve Prolapse)
+>>
+endobj
+38 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 39 0 R /Parent 16 0 R /Prev 37 0 R /Title (Nervous Disorders)
+>>
+endobj
+39 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 40 0 R /Parent 16 0 R /Prev 38 0 R /Title (Prosthetic Heart Valve)
+>>
+endobj
+40 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 41 0 R /Parent 16 0 R /Prev 39 0 R /Title (Respiratory Problems)
+>>
+endobj
+41 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 42 0 R /Parent 16 0 R /Prev 40 0 R /Title (Stomach Problems Ulcers)
+>>
+endobj
+42 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 43 0 R /Parent 16 0 R /Prev 41 0 R /Title (Sexually Transmitted Diseases)
+>>
+endobj
+43 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 44 0 R /Parent 16 0 R /Prev 42 0 R /Title (Unexplained Weight loss)
+>>
+endobj
+44 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 45 0 R /Parent 16 0 R /Prev 43 0 R /Title (Anemia)
+>>
+endobj
+45 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 46 0 R /Parent 16 0 R /Prev 44 0 R /Title (Asthma)
+>>
+endobj
+46 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 47 0 R /Parent 16 0 R /Prev 45 0 R /Title (Brast implants)
+>>
+endobj
+47 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 48 0 R /Parent 16 0 R /Prev 46 0 R /Title (Cancer)
+>>
+endobj
+48 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 49 0 R /Parent 16 0 R /Prev 47 0 R /Title (Growths)
+>>
+endobj
+49 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 50 0 R /Parent 16 0 R /Prev 48 0 R /Title (Diabetes)
+>>
+endobj
+50 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 51 0 R /Parent 16 0 R /Prev 49 0 R /Title (Emphysema)
+>>
+endobj
+51 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 52 0 R /Parent 16 0 R /Prev 50 0 R /Title (Fatigue)
+>>
+endobj
+52 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 53 0 R /Parent 16 0 R /Prev 51 0 R /Title (Hay Fever)
+>>
+endobj
+53 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 54 0 R /Parent 16 0 R /Prev 52 0 R /Title (Hemoptysis)
+>>
+endobj
+54 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 55 0 R /Parent 16 0 R /Prev 53 0 R /Title (Hepatitis)
+>>
+endobj
+55 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 56 0 R /Parent 16 0 R /Prev 54 0 R /Title (Hypo Thyroid)
+>>
+endobj
+56 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 57 0 R /Parent 16 0 R /Prev 55 0 R /Title (Kidney Disease)
+>>
+endobj
+57 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 58 0 R /Parent 16 0 R /Prev 56 0 R /Title (Mental Disorders)
+>>
+endobj
+58 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 59 0 R /Parent 16 0 R /Prev 57 0 R /Title (Night Sweats)
+>>
+endobj
+59 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 60 0 R /Parent 16 0 R /Prev 58 0 R /Title (Pacemaker)
+>>
+endobj
+60 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 61 0 R /Parent 16 0 R /Prev 59 0 R /Title (Rheumatic Fever)
+>>
+endobj
+61 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 62 0 R /Parent 16 0 R /Prev 60 0 R /Title (Fadiation Treatment)
+>>
+endobj
+62 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 63 0 R /Parent 16 0 R /Prev 61 0 R /Title (Sinus Probmes)
+>>
+endobj
+63 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 64 0 R /Parent 16 0 R /Prev 62 0 R /Title (Tuberculosis)
+>>
+endobj
+64 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 65 0 R /Parent 16 0 R /Prev 63 0 R /Title (Other:)
+>>
+endobj
+65 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 66 0 R /Parent 16 0 R /Prev 64 0 R /Title (Arthritis)
+>>
+endobj
+66 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 67 0 R /Parent 16 0 R /Prev 65 0 R /Title (Blood Disease)
+>>
+endobj
+67 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 68 0 R /Parent 16 0 R /Prev 66 0 R /Title (Blood Thinners)
+>>
+endobj
+68 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 69 0 R /Parent 16 0 R /Prev 67 0 R /Title (Chest Pain)
+>>
+endobj
+69 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 70 0 R /Parent 16 0 R /Prev 68 0 R /Title (Dizziness)
+>>
+endobj
+70 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 71 0 R /Parent 16 0 R /Prev 69 0 R /Title (Excessive Bleeding)
+>>
+endobj
+71 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 72 0 R /Parent 16 0 R /Prev 70 0 R /Title (Glaucoma)
+>>
+endobj
+72 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 73 0 R /Parent 16 0 R /Prev 71 0 R /Title (Head Injury)
+>>
+endobj
+73 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 74 0 R /Parent 16 0 R /Prev 72 0 R /Title (Heart Disease)
+>>
+endobj
+74 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 75 0 R /Parent 16 0 R /Prev 73 0 R /Title (Horaseness)
+>>
+endobj
+75 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 76 0 R /Parent 16 0 R /Prev 74 0 R /Title (High Cholesterol)
+>>
+endobj
+76 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 77 0 R /Parent 16 0 R /Prev 75 0 R /Title (Liver Disease)
+>>
+endobj
+77 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 78 0 R /Parent 16 0 R /Prev 76 0 R /Title (Recent Surgery)
+>>
+endobj
+78 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 79 0 R /Parent 16 0 R /Prev 77 0 R /Title (Stroke)
+>>
+endobj
+79 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 80 0 R /Parent 16 0 R /Prev 78 0 R /Title (Transplant)
+>>
+endobj
+80 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Parent 16 0 R /Prev 79 0 R /Title (Tumors)
+>>
+endobj
+81 0 obj
+<<
+/Count 5 /Kids [ 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R ] /Type /Pages
+>>
+endobj
+82 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1202
+>>
+stream
+Gb!$GgQ(#H&;KZJ.0f!)2asJV.8blW"N_^r>;U]J$4To"%4dE>lq4!>am8fj4&kUA%31T@bdK3QU29)CnE8"[A.[4Bc*)7#n>:f$$O2PW[/cL^.9&OKH$/cLk`26NqeKM+8XcInjJ@[TN&1>!?Oel:\K-OL4=PLUlQ\GFqt!uBNYkRO"KEM&VlT<oUuA<S-6c;@0'm.F0"Cjk;WP^C`:Ll/_XTLdiDr\\LC#T?l!H^K.obEAbJ0[-YjZ2j]?e:U4A%S]p`+Z&-PkeWpcL#]@EBCFG+ad`5ConX,<&tjE$ct1DFaJ_8>;(&4;?3rB%O?_5Y=IE"H1^1_$(a0N@,DVLPcc&"4a(b&PeUj4+s*>K.B\!9'WN87Ub<aPEd\lR-rMofV()oSd/6BBra;hY[hGnJq`;uC=,#9Urf=)Z:Dplj3XH=eo&KkJ9#oc4i@u"!QB)1]a'HDZi>qe7$.UG0"^-4\nMS5UU+c)*X@qSWL>a5-mB%tS"J6ZSV.c%37Ze[5+Y(dEBr3IlIFfK74\tJQ:p$Y/6hL=Ysj&E'YF\7]f&ZX5\V)@Pg1_$SM*f_Y\^tM8A3WUY(;R=6)U:c-4L/p<6khj\^YA]HCL--p<"/W&Y>8@$%JG;V^*Q1nWi]_U`ll5#99:#P)tFp>!$f0O<46kk*6:[lC94Y.78DuNsSO<O?VEI6B`sra$-tr"7ctHi/ApJHL7873U`<*hKW/Y,\7"QF&U\k-)'S>*Jcl_1f:C+,=YO@HWd;u)QMA]ZNX*+)R;c>\qaH!Ybiu!b2EXBg/)6\fR3ec1$9NCksMW_kf#m=mO=c,L'X.)Xp2`aOe@6gYt+DA6bW:2f(P-D<`5cjH`H>dSN%-on\)A5GS\`Z^Vaqq+_0isW[TV&L%lD<HMJbVK_5$Ma&`XP%qK=^8PY6fJZ>P)%km(i1+U"AC$[QX0^isc;E32[*SO@$9?qh(ra8B4G<mhM)eGnt*A%cS/UV9QbK>nuK3-+:MNH)7?_>H]IY?/^Fl-$]`WISOfZ)1-jF<#lRp*=$j.sr>R>E$0qX7iRdrVX--(/Sl#kPYK^h:%3)CeZ)]*<+Q=m3$;CFZNk@(Y0![obkG/Qr\*+3s?B)6Rm+ePJu3XCpua<#LJX/7)\Sh4IqYrT$RLb\_t,n,%ccDA,?f\G$:R5$1)D9ok\V\MPTopqcZLcJd`Y?*F;%4MfG6&S+Wa~>endstream
+endobj
+83 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 730
+>>
+stream
+Gb!$F?]UC9'ZJu,.INrL`OYRV?;0-sf>d/pCa:>kP'/COD$L<uVVb_&)Im4uAg0/H66C_5-g(a/*"^c,iV:%A"'h,\qA')lP[=H&-DA))Rr\%/Yo7f`FZ%K$+gog]1R@PtLuH*uS47aW:Id1X"EF[d`Gf>b]p?c\Xe=GO@Q'_sQ8gO413HogNEb&PZNpLMb&:+j3%J*j$<EL9(fOs;:83C@XlF0ZrT46TR_J+^d?7J#))?!AfJZoh<)\)6DiD2rb)f8T>hdd-]H=0!_S+d8Fk&L%LmH(l`lMsgi2$fNpu'*^dY:J-a9>o%FmoXFL25[bl^.*1^sUm)nKuA0E:B[M&t8<p8YCcP.RPi8\nTsF2XMqoN@H44bXoUFEh#Q`.Er,#lF(_gc5j@@C.'e;Cf4Na,+B9FK\>u]pg[AqRj)o2O!KkmB9>S[+^l!8h6r'Cik`ZCgU7VN>*tta^F>u*bT_a/Ta=Y2BrfUsI3802LfS%7gM[-;U%p7&84Y""U?/AZ!Qt6Q]\>hIifoE]Kb6,ILa/L,_DqBgonVMl.!j$U9j)HLn8Q?ZO[iYq_E>F$D$t9O`ceMCB7uL42h;PVq(.[7N?LuiHe3sd#G8'QUE*Njhc3AibmG1sktPS4`@N2>3@Bc]#9+_4hnhJ,qQR4JhB#-hIhOg'q.L<<Dbf#FIS?Hq!iP!7C:eeZH>@aTHK3`ps/e&:*?pPB3eWmEUj-"Gp^-QFp?D~>endstream
+endobj
+84 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 697
+>>
+stream
+Gb!$G95i9E'SZ;W'mBsT\9$hI03d/G![.WJ&Bec)&gP/qVmQ9o9O1U@@AL0n.ugW4O^E0Oc=FZL+L&*/[,3eB(F>Sg&WfBU*Dg>\b4fjTDLQJHiIcW_k'8;LQ5Xe`10t4umeuH._J=N]Or5U./%F>e#NO98-HifKZ2qlpS..iUD0\+@*_'_i2B:Yo-TCbL@!su(i8`2?e?0Zr6MU`+<tCaCPG[0K11Q28a]4Sa^WO:%GTg7oA^QHu%pcOPWR`h8-E>D+C[D&q'GFa'HT/m4`+<Q%9NmT[GS8i>M,-b\Cb8$:dW5)k[]WD&%^mCIb'Wjl0!!CQ1#=Bs=N486Kk[@i-dRCgKO2i`REVg<GMh#\C-ts->]i#PW4Oe@,ZKH?d#taQ-_**bBrN'Yd<4<WVR"TQ1eRpO8t%#5V77k*ebSEi9meooV84K]n0HX3%2,u2@^)V_WX3HHlf5ZUQj/MF0M0&NU*53;)r$*n(TTt=PSJF/3$K/1YX`A%aI]k.GNY%WVF\kP]-Ns:/HtnTAdI@:=kObWj'CV(A\24Z%lY[=r,BU]nT37Qa4'83lN%fdI<J1GQmY0@/94)JCoslN[k:jCTe*PYdQoIK5S$IQLn8ha"C(UN^)A,lm'KFV@7:guan*Ub,g+.b?11R![GYD`Bi/##cZ<Gf=#8uam6IabaD=+i=Q'+,nq#&(A3]NC~>endstream
+endobj
+85 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 682
+>>
+stream
+Gb!$G?'!E!'Sc)P($AIhXE3O9hRP*j;-.^`j(0%Hm3lgo>28JZG5u,HjC0Ipk_)2,L!H1^C&8m-^u>HWYF?TkWe"eU"Q[pW#*bC+jrM*P(>fqopr$Osk-bn#9+@2lMUt25hu9kui@1?^W=0H](#1J%Nq)jIVQsAkdfX%o\&K^(Mjd6Y<b9<A\:[;Dh"2GP0@2gA6s(NUXNq,+el5=@"h>\<F(g!$6MTFuhE60)U$3W8kdSZjUoG,31HC6o-TkEb&B,YqW/rfkhYQWt*oN<U>W]LG9Y+i$.H*D;`Xj1Cl&`:#QR_&)V"\bogYDnY(q)&m[j*`g<@.qakCglK"t%>C<QH%OfD_qBiTB")F)j(Z@MqX5g(n*B,n6Q1<pdp"m8k*ej)A:YNYI?pF<kWsW2#EEg\:+%2m@BgdO@b?Ab\eG>D/'50SDVn[TagsN<;!\?L7NeVrV5V3V_`u@\O,S#qH:HFQ8/T"KO65p?C*59f`#]0G:ZD_FYrcUN9>>^NEtkhi3gqDh_-7]buWN/W7sg2hFk!+6Lk&kK-j@jg:KZ8(9u[Lnc9'd>K]&_9_?n&(Zu?D?_2iZ3U]/Q@oaZg5Y,NpC79tb&K@qO^LU;#['mcTG+)to>?Z0J&._2?2X/QN&l,L'I;kflbs2k"6jC[VAWF:+-OZtdu=0b!Q!bCmBGkq~>endstream
+endobj
+86 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 682
+>>
+stream
+Gb!$G?#S1G'Sc)R/']F`iVE7)\K)V>dPT?/2dAhCkq^ZiS90_gHJE[;89D`"E[3/M'ub%gqE1aLdj":#i;S#0!B@4>j<F^5W4i<_VP(MRo4mu/[KmCkHF5/g<(7`R3+ntM1;*@b@>+B"\ABe`-oCjlKb)2d\L]7iL2$gH/<#<4G*?+,GI-l=iRdS]WdbE,*E;KN#o<C@MrQh!/X]Y'j:M@R3,9QWS'DI1F<"R?93.?3/j>*>;q9uPI"[rg+@l3s5HFpVk2*pgleG4`XeTrW`Ah"K&jVkJ'AbJ6TT%u2($#Y!MmhKFqFr!$7[8Y]9*u_S#k*r[4K,/-a:UOU=5UfkmV_??`<Obe,2?Q=#jDDs0Te8`cpWGH+5s:=>WoU\8@$IW7Tu01Co"Tg[*cP\!DZ8!TF.6FKp9P-/>P*8>%lcoDrJTNhn!6<^2KcF8]kX("V]T@Ca;Y@BVWbtd.u2):0Pep2h@)J+q#JaKnMY$Ft;1(Yh])_Mf0N0TPSdM+E<m)O@3L_KsVhJs"4'd,Re7bRfGrlObJaI'SJ6AI,,7hgU\?!o,qVBRfE`;+q"jR[=fHu[[Z-of0iQG\1)B]becRmA,f@bN*K`6\o;,GdY65U!DtT\-\!bUYY7`Lqo#,?]5RQ5Tmk;qM-9r"DU'o:+T,hQimeFHEY%2[_Sb_!8[=&O~>endstream
+endobj
+xref
+0 87
+0000000000 65535 f 
+0000000073 00000 n 
+0000000114 00000 n 
+0000000221 00000 n 
+0000000333 00000 n 
+0000000538 00000 n 
+0000000743 00000 n 
+0000000948 00000 n 
+0000001153 00000 n 
+0000001358 00000 n 
+0000001444 00000 n 
+0000001720 00000 n 
+0000001794 00000 n 
+0000001915 00000 n 
+0000002038 00000 n 
+0000002161 00000 n 
+0000002284 00000 n 
+0000002408 00000 n 
+0000002507 00000 n 
+0000002608 00000 n 
+0000002767 00000 n 
+0000002919 00000 n 
+0000003057 00000 n 
+0000003165 00000 n 
+0000003356 00000 n 
+0000003458 00000 n 
+0000003569 00000 n 
+0000003676 00000 n 
+0000003795 00000 n 
+0000003912 00000 n 
+0000004014 00000 n 
+0000004116 00000 n 
+0000004217 00000 n 
+0000004330 00000 n 
+0000004436 00000 n 
+0000004543 00000 n 
+0000004645 00000 n 
+0000004752 00000 n 
+0000004867 00000 n 
+0000004978 00000 n 
+0000005094 00000 n 
+0000005208 00000 n 
+0000005325 00000 n 
+0000005448 00000 n 
+0000005565 00000 n 
+0000005665 00000 n 
+0000005765 00000 n 
+0000005873 00000 n 
+0000005973 00000 n 
+0000006074 00000 n 
+0000006176 00000 n 
+0000006279 00000 n 
+0000006380 00000 n 
+0000006483 00000 n 
+0000006587 00000 n 
+0000006690 00000 n 
+0000006796 00000 n 
+0000006904 00000 n 
+0000007014 00000 n 
+0000007120 00000 n 
+0000007223 00000 n 
+0000007332 00000 n 
+0000007445 00000 n 
+0000007552 00000 n 
+0000007658 00000 n 
+0000007758 00000 n 
+0000007861 00000 n 
+0000007968 00000 n 
+0000008076 00000 n 
+0000008180 00000 n 
+0000008283 00000 n 
+0000008395 00000 n 
+0000008497 00000 n 
+0000008602 00000 n 
+0000008709 00000 n 
+0000008813 00000 n 
+0000008923 00000 n 
+0000009030 00000 n 
+0000009138 00000 n 
+0000009238 00000 n 
+0000009342 00000 n 
+0000009429 00000 n 
+0000009513 00000 n 
+0000010807 00000 n 
+0000011628 00000 n 
+0000012416 00000 n 
+0000013189 00000 n 
+trailer
+<<
+/ID 
+[<532251fabfcf4fd83d60f6f383634815><532251fabfcf4fd83d60f6f383634815>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 10 0 R
+/Root 9 0 R
+/Size 87
+>>
+startxref
+13962
+%%EOF

@@ -5,28 +5,51 @@ from .models import FAQ, ContactDetails, Stats, Description, \
     QuestionSection, QuestionIcon, FotterIcon, OurServices, ServiceDashboard
 from Dental.settings import EMAIL_HOST_USER
 from django.core.mail import send_mail
+from django.conf import settings
+from django.http import HttpResponse
+from django.template import Context
+from django.template.loader import get_template
+from xhtml2pdf import pisa 
+
+
+def generate_PDF(request):
+    data = {}
+    template = get_template('form.html')
+    html  = template.render(data)
+
+    file = open('test.pdf', "w+b")
+    pisaStatus = pisa.CreatePDF(html.encode('utf-8'), dest=file,
+            encoding='utf-8')
+    file.seek(0)
+    pdf = file.read()
+    file.close()            
+    return HttpResponse(pdf, 'application/pdf')
 
 
 class Dashboard(View):
     def get(self, request):
-        context = dict()
-        context['FAQ'] = FAQ.objects.all()
-        context['contact_details'] = ContactDetails.objects.all().last()
-        context['stats'] = Stats.objects.all().last()
-        context['Description'] = Description.objects.all()
-        context['content'] = DashboardContent.objects.all().last()
-        context['faq_image'] = FAQImage.objects.all().last()
-        context['smile_section'] = SmileSection.objects.all().last()
-        context['fotter_content'] = FotterContent.objects.all().last()
-        context['ques_section'] = QuestionSection.objects.all().last()
-        context['ques_icon'] = QuestionIcon.objects.all()
-        context['fotter_icon'] = FotterIcon.objects.all()
+        context = {
+            "FAQ":FAQ.objects.all(),
+            "contact_details":ContactDetails.objects.all().last(),
+            "stats":Stats.objects.all().last(),
+            "Description":Description.objects.all(),
+            "faq_image" : FAQImage.objects.all().last(),
+            "smile_section" : SmileSection.objects.all().last(),
+            "fotter_content" : FotterContent.objects.all().last(),
+            "ques_section" : QuestionSection.objects.all().last(),
+            "ques_icon" : QuestionIcon.objects.all(),
+            "fotter_icon" : FotterIcon.objects.all(),
+            "content" : DashboardContent.objects.all().last()
+
+        }
         return render(request, "index.html", context)
 
 
 class ContactView(View):
     def get(self, request):
-        return render(request, "contact.html")
+        context = dict()
+        context['contact_details'] = ContactDetails.objects.all().last()
+        return render(request, "contact.html", context)
 
     def post(self, request):
         first_name = request.POST.get('first_name')
