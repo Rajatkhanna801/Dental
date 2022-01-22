@@ -28,13 +28,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'dashboard' %}">Home</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'dashboard' %}"><h6><strong style="font-style: italic;">Home</strong></h6></a>
             </li>
+            &nbsp;
             <li class="nav-item">
-            <a class="nav-link" href="{% url 'services' %}">Services</a>
+            <a class="nav-link" href="{% url 'services' %}"><h6><strong style="font-style: italic;">Services</strong></h6></a>
             </li>
+            &nbsp;
             <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            <a class="nav-link" href="{% url 'contact' %}"><h6><strong style="font-style: italic;" >Contact</strong></h6></a>
             </li>
         </ul>
         </div>
@@ -51,8 +53,8 @@
                     <h1>{{abc.quote|slice:"14"}} <br>{{abc.quote|slice:"14::"}}</h1>
                     <h4>{{abc.content}}</h4>
                     <ul>
-                        <li><a href=""><img src="{% static 'assets/images/phone.png' %}" /> Call Us:+1 234 456 678</a></li>
-                        <li><a href="{% url 'new-user' %}"><img src="{% static 'assets/images/book-appointment.png' %}" /> Book Appointment</a></li>
+                        <li><a href="#"><img src="{% static 'assets/images/phone.png' %}" /> Call Us:{{contact_details.phone_number}}</a></li>
+                        <li><a href="{% url 'new-user' %}"><img src="{% static 'assets/images/book-appointment.PNG' %}" /> Book Appointment</a></li>
                     </ul>
 
                 </div>
