@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 
-    <title>patient infomation form</title>
+    <title>Patient infomation form</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12">
@@ -41,15 +41,15 @@
               <div class="col-md-12">
                   <div class="row mb-4">
                     <div class="col-md-4">
-                        <label for="staticDate" class="custom-font col-form-label">Date:</label>
+                        <label for="staticDate" class="custom-font col-form-label">Appointment Date:{{appointment_date}}</label>
                         <input class="form-control cus-form-control" required name="appointment_date" type="date" value="" id="example-date-input">
                     </div>
                     <div class="col-md-4">
-                      <label for="staticName" class="custom-font col-form-label">Patient Name:</label>
+                      <label for="staticName" class="custom-font col-form-label">Patient Name:{{patient_name}}</label>
                       <input class="form-control cus-form-control" type="text" name="patient_name" placeholder="John Doe" aria-label="default input example">
                     </div>
                     <div class="col-md-4">
-                      <label for="staticName" class="custom-font col-form-label">Preferred Name:</label>
+                      <label for="staticName" class="custom-font col-form-label">Preferred Name:{{preferred_name}}</label>
                       <input class="form-control cus-form-control" type="text" name="preferred_name" placeholder="Sam smith" aria-label="default input example">
                     </div>
                   </div>
@@ -58,19 +58,19 @@
                       <h6 class="custom-font mb-2">Please Circle One:</h6>
                       <div class="d-flex mb-2">
                         <div class="form-check me-2">
-                          <input class="form-check-input" type="radio" id="inlineCheckbox78" name="martial_status" value="Married">
+                          <input class="form-check-input" type="radio" {% if martial_status == "Married" %} checked {% endif %} id="inlineCheckbox78" >
                           <label class="form-check-label custom-text" for="inlineCheckbox78">Married</label>
                         </div>
                         <div class="form-check me-2">
-                          <input class="form-check-input" type="radio" id="inlineCheckbox79" name="martial_status" value="Single">
+                          <input class="form-check-input" type="radio" id="inlineCheckbox79" {% if martial_status == "Single" %} checked {% endif %}>
                           <label class="form-check-label custom-text" for="inlineCheckbox79">Single</label>
                         </div>
                         <div class="form-check me-2">
-                          <input class="form-check-input" type="radio" id="inlineCheckbox80" name="martial_status" value="Child">
+                          <input class="form-check-input" type="radio" id="inlineCheckbox80" {% if martial_status == "Child" %} checked {% endif %} name="martial_status" value="Child">
                           <label class="form-check-label custom-text" for="inlineCheckbox80">Child</label>
                         </div>
                         <div class="form-check me-2">
-                          <input class="form-check-input" type="radio" id="inlineCheckbox81" name="martial_status" value="Other">
+                          <input class="form-check-input" type="radio" id="inlineCheckbox81" {% if martial_status == "Other" %} checked {% endif %} name="martial_status" value="Other">
                           <label class="form-check-label custom-text" for="inlineCheckbox81">Other</label>
                         </div>
                       </div>
@@ -1657,111 +1657,5 @@
           </div>
         </section>
   </form>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/custom.js' %}"></script>
-    <script>
-      $("#previous-btn").on('click', function(){
-        $("#new_form").css("display", "none");
-        $("#old_form").css("display", "block");
-      })
-      $("#next-new-form").on('click', function(){
-        if ($("input[name='appointment_date']").val() ==""){
-          alert("PLease select Date")
-        }
-        // else if ($("input[name='name']").val() ==""){
-          // alert("PLease select Name")
-        // }
-        // else if($("input[name='martial_status']:checked").length==0){
-          // alert("PLease select Merital status")
-        // }
-        // else if($("input[name='gender']:checked").length==0){
-          // alert("PLease select Gender")
-        // }
-        // else if ($("input[name='address']").val() == ""){
-          // alert("PLease enter Address")
-        // }
-        // else if ($("input[name='city']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        // else if ($("input[name='state']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        // else if ($("input[name='country']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        // else if ($("input[name='work_phone']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        // else if ($("input[name='mobile_phone']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        // else if ($("input[name='email']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        // else if ($("input[name='occupation']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        // else if ($("input[name='patient_emplorer']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        // else if ($("input[name='relative_name']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        // else if ($("input[name='relationship']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        // else if ($("input[name='relation_phone']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        // else if ($("input[name='relation_phone']").val() == ""){
-          // alert("PLease enter City")
-        // }
-        else{
-          $("#new_form").css("display", "block");
-          $("#old_form").css("display", "none");
-        }
-      })
-
-      $(document).ready(function(){
-        $("#new_form").css("display", "none");
-      })
-      $("#submit_btn").on('click', function(){
-        $("#patient-form").submit()
-      })
-
-      $("input[name='hospitalized']").on('change',function(){
-        if ($("input[name='hospitalized']:checked").val() == "True"){
-          $(".hospital").removeClass('d-none');
-        }else{
-          $(".hospital").addClass('d-none');
-        }
-      });
-
-      $("input[name='illness']").on('change',function(){
-        if ($("input[name='illness']:checked").val() == "True"){
-          $(".illness").removeClass('d-none');
-        }else{
-          $(".illness").addClass('d-none');
-        }
-      });
-    
-      $("input[name='pregant']").on('change',function(){
-        if ($("input[name='pregant']:checked").val() == "True"){
-          $(".pregnant").removeClass('d-none');
-        }else{
-          $(".pregnant").addClass('d-none');
-        }
-      });
-
-      $("input[name='tobacco']").on('change',function(){
-        if ($("input[name='tobacco']:checked").val() == "True"){
-          $("#chewing_tabacco").removeClass('d-none')
-        }else{
-          $("#chewing_tabacco").addClass('d-none');
-        }
-
-      });
-    </script>
   </body>
 </html>

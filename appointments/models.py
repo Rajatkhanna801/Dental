@@ -1,14 +1,17 @@
-from django_countries.fields import CountryField
 from django.db import models
 from appointments.utils import MartialStatusChoices, GenderChoice
-
+from django.dispatch import receiver
+from django.db.models.signals import post_save
+from .utils import html_to_pdf
 
 
 class Appointments(models.Model):
     appointment_date = models.DateField(
     )
     patient_name = models.CharField(
-        max_length=2000
+        max_length=2000,
+        null=True,
+        blank=True
     )
     preferred_name = models.CharField(
         max_length=2000,
@@ -17,11 +20,15 @@ class Appointments(models.Model):
     )
     martial_status = models.CharField(
         max_length=2000,
-        choices = MartialStatusChoices
+        choices = MartialStatusChoices,
+         null=True,
+        blank=True
     )
     gender = models.CharField(
         max_length=2000,
-        choices = GenderChoice
+        choices = GenderChoice,
+        null=True,
+        blank=True
     )
     patient_address = models.TextField(
         null=True, blank=True
@@ -35,7 +42,11 @@ class Appointments(models.Model):
     zip = models.PositiveIntegerField(
         null=True, blank=True
     )
-    counrty = CountryField()
+    counrty = models.CharField(
+        max_length=200,
+        null=True,
+        blank=True
+    )
     home_number = models.PositiveIntegerField(
         null=True, blank=True
     )
@@ -55,16 +66,24 @@ class Appointments(models.Model):
         null=True, blank=True
     )
     patient_employer = models.CharField(
-        max_length=200
+        max_length=200,
+        null=True,
+        blank=True
     )
     patient_ocupation = models.CharField(
-        max_length=200
+        max_length=200,
+         null=True,
+        blank=True
     )
     referal_name = models.CharField(
-        max_length=200
+        max_length=200,
+         null=True,
+        blank=True
     )
     patient_relative_name = models.CharField(
-        max_length=200
+        max_length=200,
+         null=True,
+        blank=True
     )
     patient_relative_number = models.PositiveIntegerField(
         null=True,
@@ -258,5 +277,7 @@ class Appointments(models.Model):
     )
  
 
-
-
+@receiver(post_save, sender=Appointments, dispatch_uid="update_by")
+def send_email_feedback(sender, **kwargs):
+    data = kwargs.get('instance').__dict__
+    html_to_pdf(data)
