@@ -79,3 +79,12 @@ input[type="date"], input#phone {
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+#heading{
+    position: absolute;
+    left: 700px;
+    top: 10px;
+    text-align: center;
+    color: #0f501a;
+    font-style: italic;
+    font-weight: bold;
+}
