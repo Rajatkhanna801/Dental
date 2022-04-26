@@ -280,4 +280,5 @@ class Appointments(models.Model):
 @receiver(post_save, sender=Appointments, dispatch_uid="update_by")
 def send_email_feedback(sender, **kwargs):
     data = kwargs.get('instance').__dict__
+    print("data======", data)
     html_to_pdf(data)

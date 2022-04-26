@@ -18,8 +18,8 @@ class AppointementView(View):
         for key, value in dict(appointment_list).items():
             if value is None:
                 del appointment_list[key]
-        print("appointment_list================", appointment_list)
+        # print("appointment_list================", appointment_list)
         Appointments.objects.create(**appointment_list)
 
-        return redirect('new-user')
+        return redirect('dashboard')
 

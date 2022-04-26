@@ -55,13 +55,12 @@
                   </div>
                   <div class="row mb-4">
                     <div class="col-md-4">
-                      <h6 class="custom-font mb-2">Please Circle One:</h6>
+                      <h6 class="custom-font mb-2">Martial status:{{martial_status}}</h6>
                       <div class="d-flex mb-2">
                         <div class="form-check me-2">
-                          <input class="form-check-input" type="radio" {% if martial_status == "Married" %} checked {% endif %} id="inlineCheckbox78" >
-                          <label class="form-check-label custom-text" for="inlineCheckbox78">Married</label>
+                          <input class="form-check-input" type="" value={{martial_status}} >
                         </div>
-                        <div class="form-check me-2">
+                        <!-- <div class="form-check me-2">
                           <input class="form-check-input" type="radio" id="inlineCheckbox79" {% if martial_status == "Single" %} checked {% endif %}>
                           <label class="form-check-label custom-text" for="inlineCheckbox79">Single</label>
                         </div>
@@ -72,59 +71,50 @@
                         <div class="form-check me-2">
                           <input class="form-check-input" type="radio" id="inlineCheckbox81" {% if martial_status == "Other" %} checked {% endif %} name="martial_status" value="Other">
                           <label class="form-check-label custom-text" for="inlineCheckbox81">Other</label>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <h6 class="custom-font mb-2">Gender:</h6>
+                      <h6 class="custom-font mb-2">Gender:{{gender}}</h6>
                       <div class="d-flex mb-2">   
                         <div class="form-check me-2">
-                          <input class="form-check-input" type="radio" id="inlineCheckbox82" name="gender" value="Male">
-                          <label class="form-check-label custom-text" for="inlineCheckbox82">Male</label>
-                        </div>
-                        <div class="form-check me-2">
-                          <input class="form-check-input" type="radio" id="inlineCheckbox83" name="gender" value="Female">
-                          <label class="form-check-label custom-text" for="inlineCheckbox83">Female</label>
-                        </div>
-                        <div class="form-check me-2">
-                          <input class="form-check-input" type="radio" id="inlineCheckbox184" name="gender" value="Other">
-                          <label class="form-check-label custom-text" for="inlineCheckbox184">Other</label>
+                          <input class="form-check-input" type="text" id="inlineCheckbox82" name="gender" value={{gender}}>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="row mb-4">
                     <div class="col-md-8">
-                      <label for="staticAddress" class="custom-font col-form-label">Patient Address:</label>
-                      <input type="street"class="form-control cus-form-control" name="address" id="autocomplete"placeholder="#4356,sec-D chandigarh">
+                      <label for="staticAddress" class="custom-font col-form-label">Patient Address:{{patient_address}}</label>
+                      <input type="street"class="form-control cus-form-control" name="address" id="autocomplete" value={{patient_address}}>
                     </div>
                     <div class="col-md-4">
-                      <label for="staticCity" class="custom-font col-form-label">City:</label>
-                      <input type="city" class="form-control cus-form-control" name="city" id="inputCity" placeholder="City">
+                      <label for="staticCity" class="custom-font col-form-label">City:{{city}}</label>
+                      <input type="city" class="form-control cus-form-control" name="city" id="inputCity" value={{city}}>
                     </div>
                     <div class="col-md-4">
-                      <label for="staticZip" class="custom-font col-form-label">Zip:</label>
-                      <input type="zip" class="form-control cus-form-control" name="zip_code" id="inputZip" placeholder="Zip">
+                      <label for="staticZip" class="custom-font col-form-label">Zip:{{zip}}</label>
+                      <input type="zip" class="form-control cus-form-control" name="zip_code" id="inputZip" value={{zip}}>
                     </div>
                     <div class="col-md-4">
-                      <label for="staticState" class="custom-font col-form-label">State:</label>
-                      <input type="state" class="form-control cus-form-control" name="state" id="inputState" placeholder="State">
+                      <label for="staticState" class="custom-font col-form-label">State:{{state}}</label>
+                      <input type="state" class="form-control cus-form-control" name="state" id="inputState" value={{state}}>
                     </div>
                     
                     <div class="col-md-4">
-                      <label for="staticCounty" class="custom-font col-form-label">County:</label>
-                      <input type="county" class="form-control cus-form-control" name="country"  id="inputCounty" placeholder="County">
+                      <label for="staticCounty" class="custom-font col-form-label">County:{{country}}</label>
+                      <input type="county" class="form-control cus-form-control" name="country"  id="inputCounty" value={{county}}>
                     </div>
                   </div>
                   <div class="row mb-4">
                   <div class="col-md-4">
-                      <label for="phone"class="custom-font col-form-label">Work phone:</label>
-                      <input type="tel" id="phone" name="work_phone" placeholder="123-45-678" name="work_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                      <label for="phone"class="custom-font col-form-label">Work phone:{{work_number}}</label>
+                      <input type="tel" id="phone" name="work_phone" placeholder="123-45-678" name="work_number" value={{work_number}}>
                     </div>
                     <div class="col-md-4">
         
-                        <label for="phone"class="custom-font col-form-label">Mobile phone:</label>
-                        <input type="tel" id="phone" name="mobile_phone" placeholder="123-45-678" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                        <label for="phone"class="custom-font col-form-label">Mobile phone:{{phone_number}}</label>
+                        <input type="tel" id="phone" name="mobile_phone" value={{phone_number}}>
                 
                     </div>
                   </div>
@@ -133,13 +123,10 @@
                       <h6 class="custom-font mb-2">Would you like to receive appointment reminders via text message?</h6>
                       <div class="d-flex">
                         <div class="form-check me-2">
-                          <input class="form-check-input cus-form-control" name="mobile-message" type="radio" id="mobile-message" value="True">
-                          <label class="form-check-label" for="inlineCheckbox84">Yes</label>
+                          <input name="mobile-message" type="text" id="mobile-message" value={% if reminder_via_message %}True{% else %}False{% endif %}>
+                        
                         </div>
-                        <div class="form-check">
-                          <input class="form-check-input cus-form-control" name="mobile-message" type="radio" id="mobile-message" value="False">
-                          <label class="form-check-label" for="inlineCheckbox85">No</label>
-                        </div>
+                       
                       </div>
                     </div>
                     <div class="col-md-4">
@@ -996,7 +983,7 @@
                     </div>
                   </div>
               </div>
-              <div class="col-md-12">
+              <!-- <div class="col-md-12">
                 <div class="button-section d-flex">
                   <div class="Preview-btn my-5 d-flex justify-content-center">
                     <a href="{% url 'dashboard' %}">
@@ -1011,7 +998,7 @@
                   </div>
                 </div>
                 </div>
-              </div>
+              </div> -->
             </div>
         </section> 
         <section id="new_form">
@@ -1634,7 +1621,7 @@
                       <h6 class="custom-font mb-2 mt-3">To the best of my knowledge, all of the preceding answers and information provided in this form is gure and correct. I will be responsible to inform the doctor if there is any change in my health at my health at my next appointment.</h6>
 
                     </div>
-                    <div class="col-md-12">
+                    <!-- <div class="col-md-12">
                       <div class="button-section d-flex">
                         <div class="Preview-btn my-5 d-flex justify-content-center">
                           <a href="#">
@@ -1645,7 +1632,7 @@
                           
                             <button type="button" id="submit_btn" class="btn btn-blue">Submit </button>
                         </div>
-                      </div>
+                      </div> -->
                     <!-- <div class="col-md-12">
                       <div class="submit-btn my-5 d-flex justify-content-center">
                         <button type="button" class="btn btn-blue">Submit</button>
